@@ -40,9 +40,10 @@ function findTriangleType(a,b,c){
 
 
 // 4.
- function getDayName(num){
 
-switch(num){
+    
+switch (new Date().getDay()){
+
     case 0 : day = "Sunday";
     break;
     case 1 : day = "Monday";
@@ -58,13 +59,10 @@ switch(num){
     case 6 : day = "Saturday";
     break;
     default: day = "invalid day";
+   return day;
 }
+console.log("Today is " + day)
     
-    return day;
-    
-}
-
-console.log(getDayName(6))
 
 
 
